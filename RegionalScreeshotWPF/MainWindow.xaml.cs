@@ -24,5 +24,10 @@ namespace RegionalScreeshotWPF
         {
             InitializeComponent();
         }
+
+        private void TakeScreenshotButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

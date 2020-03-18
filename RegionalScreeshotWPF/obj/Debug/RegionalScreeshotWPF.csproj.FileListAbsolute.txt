@@ -1,0 +1,14 @@
+C:\Users\Mycomp\source\repos\RegionalScreeshotWPF\RegionalScreeshotWPF\bin\Debug\RegionalScreeshotWPF.exe.config
+C:\Users\Mycomp\source\repos\RegionalScreeshotWPF\RegionalScreeshotWPF\bin\Debug\RegionalScreeshotWPF.exe
+C:\Users\Mycomp\source\repos\RegionalScreeshotWPF\RegionalScreeshotWPF\bin\Debug\RegionalScreeshotWPF.pdb
+C:\Users\Mycomp\source\repos\RegionalScreeshotWPF\RegionalScreeshotWPF\obj\Debug\RegionalScreeshotWPF.csprojAssemblyReference.cache
+C:\Users\Mycomp\source\repos\RegionalScreeshotWPF\RegionalScreeshotWPF\obj\Debug\MainWindow.g.cs
+C:\Users\Mycomp\source\repos\RegionalScreeshotWPF\RegionalScreeshotWPF\obj\Debug\App.g.cs
+C:\Users\Mycomp\source\repos\RegionalScreeshotWPF\RegionalScreeshotWPF\obj\Debug\RegionalScreeshotWPF_MarkupCompile.cache
+C:\Users\Mycomp\source\repos\RegionalScreeshotWPF\RegionalScreeshotWPF\obj\Debug\RegionalScreeshotWPF_MarkupCompile.lref
+C:\Users\Mycomp\source\repos\RegionalScreeshotWPF\RegionalScreeshotWPF\obj\Debug\MainWindow.baml
+C:\Users\Mycomp\source\repos\RegionalScreeshotWPF\RegionalScreeshotWPF\obj\Debug\RegionalScreeshotWPF.g.resources
+C:\Users\Mycomp\source\repos\RegionalScreeshotWPF\RegionalScreeshotWPF\obj\Debug\RegionalScreeshotWPF.Properties.Resources.resources
+C:\Users\Mycomp\source\repos\RegionalScreeshotWPF\RegionalScreeshotWPF\obj\Debug\RegionalScreeshotWPF.csproj.GenerateResource.cache
+C:\Users\Mycomp\source\repos\RegionalScreeshotWPF\RegionalScreeshotWPF\obj\Debug\RegionalScreeshotWPF.exe
+C:\Users\Mycomp\source\repos\RegionalScreeshotWPF\RegionalScreeshotWPF\obj\Debug\RegionalScreeshotWPF.pdb
