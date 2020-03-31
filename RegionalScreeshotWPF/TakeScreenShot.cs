@@ -8,5 +8,9 @@ namespace RegionalScreeshotWPF
 {
     public class TakeScreenShot
     {
+        public TakeScreenShot()
+        {
+
+        }
     }
 }

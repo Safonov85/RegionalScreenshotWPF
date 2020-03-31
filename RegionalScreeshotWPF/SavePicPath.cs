@@ -8,5 +8,9 @@ namespace RegionalScreeshotWPF
 {
     public class SavePicPath
     {
+        public SavePicPath()
+        {
+
+        }
     }
 }

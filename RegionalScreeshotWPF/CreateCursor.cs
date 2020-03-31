@@ -12,6 +12,10 @@ namespace RegionalScreeshotWPF
 {
     public class CreateCursor
     {
+		public CreateCursor()
+		{
+
+		}
 
 		public string manualTutorial = "Scroll (+ Hold Ctrl) ( ← → ↑ ↓ )";
 
