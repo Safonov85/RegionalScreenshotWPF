@@ -27,7 +27,42 @@ namespace RegionalScreeshotWPF
 
         private void TakeScreenshotButton_Click(object sender, RoutedEventArgs e)
         {
+            Window myWin = new MyWindow(); // Create the Window object.
+
+            // ToolWindow does not have any max or min buttons.
+
+
+            myWin.WindowStyle = WindowStyle.ToolWindow;
+
+
+            myWin.Content += "\nTesting new window"; // add more content
+
+
+            myWin.Show();
+        }
+    }
+
+    class MyWindow : Window
+
+    {  // Declare a class that derives from the Window class
+
+        public MyWindow()
+        { // Constructor
+
+
+            Width = 300;
+
+
+            Height = 100;
+
+
+            Title = "New Window";
+
+
+            Content = "Is this working?";
+
 
         }
+
     }
 }
