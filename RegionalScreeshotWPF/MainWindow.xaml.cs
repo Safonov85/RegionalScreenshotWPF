@@ -20,6 +20,8 @@ namespace RegionalScreeshotWPF
     /// </summary>
     public partial class MainWindow : Window
     {
+        Window myWin = new MyWindow(SystemParameters.VirtualScreenWidth, SystemParameters.VirtualScreenHeight);
+
         public MainWindow()
         {
             InitializeComponent();
@@ -27,33 +29,39 @@ namespace RegionalScreeshotWPF
 
         private void TakeScreenshotButton_Click(object sender, RoutedEventArgs e)
         {
-            Window myWin = new MyWindow(); // Create the Window object.
-
-            // ToolWindow does not have any max or min buttons.
-
 
             myWin.WindowStyle = WindowStyle.ToolWindow;
 
+            myWin.WindowState = WindowState.Maximized;
+            myWin.WindowStyle = WindowStyle.None;
 
-            myWin.Content += "\nTesting new window"; // add more content
 
+            myWin.Content += "\nTesting new window";
+
+            myWin.MouseUp += new MouseButtonEventHandler(WindowClickUp);
 
             myWin.Show();
+        }
+
+        void WindowClickUp(object sender, RoutedEventArgs e)
+        {
+
+            myWin.Background = Brushes.Red;
+            //myWin.Close();
         }
     }
 
     class MyWindow : Window
+    {
 
-    {  // Declare a class that derives from the Window class
-
-        public MyWindow()
-        { // Constructor
-
-
-            Width = 300;
+        public MyWindow(double width, double height)
+        {
 
 
-            Height = 100;
+            Width = width;
+
+
+            Height = height;
 
 
             Title = "New Window";
@@ -63,6 +71,5 @@ namespace RegionalScreeshotWPF
 
 
         }
-
     }
 }
