@@ -39,14 +39,21 @@ namespace RegionalScreeshotWPF
             myWin.Content += "\nTesting new window";
 
             myWin.MouseUp += new MouseButtonEventHandler(WindowClickUp);
+            myWin.MouseLeftButtonUp += new MouseButtonEventHandler(MouseLeftUp);
 
             myWin.Show();
+        }
+
+        private void MouseLeftUp(object sender, MouseButtonEventArgs e)
+        {
+            myWin.Background = Brushes.Green;
+            //throw new NotImplementedException();
         }
 
         void WindowClickUp(object sender, RoutedEventArgs e)
         {
 
-            myWin.Background = Brushes.Red;
+            //myWin.Background = Brushes.Red;
             //myWin.Close();
         }
     }
