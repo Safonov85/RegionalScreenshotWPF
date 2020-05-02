@@ -20,7 +20,7 @@ namespace RegionalScreeshotWPF
     /// </summary>
     public partial class MainWindow : Window
     {
-        Window myWin = new MyWindow(SystemParameters.VirtualScreenWidth, SystemParameters.VirtualScreenHeight);
+        Window myWin;
 
         public MainWindow()
         {
@@ -29,7 +29,7 @@ namespace RegionalScreeshotWPF
 
         private void TakeScreenshotButton_Click(object sender, RoutedEventArgs e)
         {
-
+            myWin = new MyWindow(SystemParameters.VirtualScreenWidth, SystemParameters.VirtualScreenHeight);
             myWin.WindowStyle = WindowStyle.ToolWindow;
 
             myWin.WindowState = WindowState.Maximized;
@@ -40,8 +40,15 @@ namespace RegionalScreeshotWPF
 
             myWin.MouseUp += new MouseButtonEventHandler(WindowClickUp);
             myWin.MouseLeftButtonUp += new MouseButtonEventHandler(MouseLeftUp);
+            myWin.MouseRightButtonUp += new MouseButtonEventHandler(MouseRightUp);
 
-            myWin.Show();
+            myWin.ShowDialog();
+        }
+
+        private void MouseRightUp(object sender, MouseButtonEventArgs e)
+        {
+            myWin.Hide();
+            myWin.Close();
         }
 
         private void MouseLeftUp(object sender, MouseButtonEventArgs e)
@@ -55,28 +62,6 @@ namespace RegionalScreeshotWPF
 
             //myWin.Background = Brushes.Red;
             //myWin.Close();
-        }
-    }
-
-    class MyWindow : Window
-    {
-
-        public MyWindow(double width, double height)
-        {
-
-
-            Width = width;
-
-
-            Height = height;
-
-
-            Title = "New Window";
-
-
-            Content = "Is this working?";
-
-
         }
     }
 }
