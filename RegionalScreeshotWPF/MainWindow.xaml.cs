@@ -41,8 +41,24 @@ namespace RegionalScreeshotWPF
             myWin.MouseUp += new MouseButtonEventHandler(WindowClickUp);
             myWin.MouseLeftButtonUp += new MouseButtonEventHandler(MouseLeftUp);
             myWin.MouseRightButtonUp += new MouseButtonEventHandler(MouseRightUp);
+            myWin.KeyUp += new KeyEventHandler(MyWin_KeyUp);
+            myWin.MouseWheel += new MouseWheelEventHandler(MouseScroll);
+
 
             myWin.ShowDialog();
+        }
+
+        private void MouseScroll(object sender, MouseWheelEventArgs e)
+        {
+            myWin.Background = Brushes.LightBlue;
+        }
+
+        private void MyWin_KeyUp(object sender, KeyEventArgs e)
+        {
+            if(e.Key == Key.Escape)
+            {
+                myWin.Close();
+            }
         }
 
         private void MouseRightUp(object sender, MouseButtonEventArgs e)
