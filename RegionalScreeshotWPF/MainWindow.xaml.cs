@@ -50,7 +50,15 @@ namespace RegionalScreeshotWPF
 
         private void MouseScroll(object sender, MouseWheelEventArgs e)
         {
-            myWin.Background = Brushes.LightBlue;
+            if (e.Delta > 0)
+            {
+                myWin.Background = Brushes.LightBlue;
+            }
+
+            else if (e.Delta < 0)
+            {
+                myWin.Background = Brushes.LightCoral;
+            }
         }
 
         private void MyWin_KeyUp(object sender, KeyEventArgs e)
