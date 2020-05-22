@@ -15,9 +15,7 @@ using System.Windows.Shapes;
 
 namespace RegionalScreeshotWPF
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
+    // Main GUI Class
     public partial class MainWindow : Window
     {
         Window myWin;
