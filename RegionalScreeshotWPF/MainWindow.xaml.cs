@@ -47,7 +47,8 @@ namespace RegionalScreeshotWPF
 
             myWin.ShowDialog();
         }
-
+        
+        // SCROLL
         private void MouseScroll(object sender, MouseWheelEventArgs e)
         {
             if (e.Delta > 0)
@@ -61,26 +62,31 @@ namespace RegionalScreeshotWPF
             }
         }
 
+        // KEYBOARD
         private void MyWin_KeyUp(object sender, KeyEventArgs e)
         {
             if(e.Key == Key.Escape)
             {
                 myWin.Close();
             }
+
         }
 
+        // RIGHT CLICK
         private void MouseRightUp(object sender, MouseButtonEventArgs e)
         {
             myWin.Hide();
             myWin.Close();
         }
 
+        // LEFT CLICK
         private void MouseLeftUp(object sender, MouseButtonEventArgs e)
         {
             myWin.Background = Brushes.Green;
             //throw new NotImplementedException();
         }
 
+        // MOUSE CLICK (ANY)
         void WindowClickUp(object sender, RoutedEventArgs e)
         {
 
