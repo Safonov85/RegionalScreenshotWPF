@@ -56,7 +56,7 @@ namespace RegionalScreeshotWPF
 
             else if (e.Delta < 0)
             {
-                myWin.Background = Brushes.LightCoral;
+                myWin.Background = Brushes.Red;
             }
         }
 

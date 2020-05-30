@@ -13,7 +13,7 @@ namespace RegionalScreeshotWPF
         Image mainImage;
         public MyWindow(double width, double height)
         {
-
+            //mainImage = new Image();
 
             Width = width;
 
