@@ -18,7 +18,8 @@ namespace RegionalScreeshotWPF
     // Main GUI Class
     public partial class MainWindow : Window
     {
-        Window myWin;
+        //Window myWin;
+        MyWindow myWin = new MyWindow(SystemParameters.VirtualScreenWidth, SystemParameters.VirtualScreenHeight);
 
         public MainWindow()
         {
@@ -27,7 +28,7 @@ namespace RegionalScreeshotWPF
 
         private void TakeScreenshotButton_Click(object sender, RoutedEventArgs e)
         {
-            myWin = new MyWindow(SystemParameters.VirtualScreenWidth, SystemParameters.VirtualScreenHeight);
+            //myWin = new MyWindow(SystemParameters.VirtualScreenWidth, SystemParameters.VirtualScreenHeight);
             myWin.WindowStyle = WindowStyle.ToolWindow;
 
             myWin.WindowState = WindowState.Maximized;
@@ -56,7 +57,7 @@ namespace RegionalScreeshotWPF
 
             else if (e.Delta < 0)
             {
-                myWin.Background = Brushes.Red;
+                myWin.Background = new ImageBrush(new BitmapImage(new Uri(@"C:\Users\Mycomp\Desktop\CamillaMain.png")));
             }
         }
 
@@ -73,15 +74,19 @@ namespace RegionalScreeshotWPF
         // RIGHT CLICK
         private void MouseRightUp(object sender, MouseButtonEventArgs e)
         {
-            myWin.Hide();
+            //myWin.Hide();
+            
             myWin.Close();
         }
 
         // LEFT CLICK
         private void MouseLeftUp(object sender, MouseButtonEventArgs e)
         {
-            myWin.Background = Brushes.Green;
+            //myWin.Background = Brushes.Green;
             //throw new NotImplementedException();
+
+            myWin.TakeScreenShot(Environment.GetFolderPath(Environment.SpecialFolder.Desktop));
+            //myWin.Background = new ImageBrush(new BitmapImage(new Uri(@"C:\Users\Mycomp\Desktop\CamillaMain.png")));
         }
 
         // MOUSE CLICK (ANY)
