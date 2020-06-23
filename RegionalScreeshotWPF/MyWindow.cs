@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.Drawing.Imaging;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -54,6 +55,30 @@ namespace RegionalScreeshotWPF
                 //bitmap.Save(DateTime.Now.ToString("yyyyMMdd") + DateTime.Now.Hour.ToString() + DateTime.Now.Minute.ToString() +
                 //    DateTime.Now.Second.ToString() + ".jpg", ImageFormat.Jpeg);
             }
+        }
+
+        public void TakeScreenShot2()
+        {
+            int width = Screen.PrimaryScreen.Bounds.Size.Width;
+            int height = Screen.PrimaryScreen.Bounds.Size.Height;
+            DrawingVisual drawvis = new DrawingVisual();
+            System.Windows.Point pointX = new System.Windows.Point(0,0);
+            System.Windows.Point pointY = new System.Windows.Point(width, height);
+
+            //drawvis.PointFromScreen(pointX);
+            //drawvis.PointToScreen(pointY);
+
+            RenderTargetBitmap renderTargetBitmap =
+                new RenderTargetBitmap(width, height, 96, 96, PixelFormats.Pbgra32);
+            renderTargetBitmap.Render(drawvis);
+            PngBitmapEncoder pngImage = new PngBitmapEncoder();
+            pngImage.Frames.Add(BitmapFrame.Create(renderTargetBitmap));
+            using (var fileStream = new FileStream("pictureSS.png", FileMode.Create))
+            {
+                pngImage.Save(fileStream);
+            }
+
+            Console.WriteLine("testing screen shot");
         }
     }
 }

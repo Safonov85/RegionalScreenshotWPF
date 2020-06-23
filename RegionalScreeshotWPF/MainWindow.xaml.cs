@@ -29,22 +29,23 @@ namespace RegionalScreeshotWPF
         private void TakeScreenshotButton_Click(object sender, RoutedEventArgs e)
         {
             //myWin = new MyWindow(SystemParameters.VirtualScreenWidth, SystemParameters.VirtualScreenHeight);
-            myWin.WindowStyle = WindowStyle.ToolWindow;
+            //myWin.WindowStyle = WindowStyle.ToolWindow;
 
-            myWin.WindowState = WindowState.Maximized;
-            myWin.WindowStyle = WindowStyle.None;
-
-
-            myWin.Content += "\nTesting new window";
-
-            myWin.MouseUp += new MouseButtonEventHandler(WindowClickUp);
-            myWin.MouseLeftButtonUp += new MouseButtonEventHandler(MouseLeftUp);
-            myWin.MouseRightButtonUp += new MouseButtonEventHandler(MouseRightUp);
-            myWin.KeyUp += new KeyEventHandler(MyWin_KeyUp);
-            myWin.MouseWheel += new MouseWheelEventHandler(MouseScroll);
+            //myWin.WindowState = WindowState.Maximized;
+            //myWin.WindowStyle = WindowStyle.None;
 
 
-            myWin.ShowDialog();
+            //myWin.Content += "\nTesting new window";
+
+            //myWin.MouseUp += new MouseButtonEventHandler(WindowClickUp);
+            //myWin.MouseLeftButtonUp += new MouseButtonEventHandler(MouseLeftUp);
+            //myWin.MouseRightButtonUp += new MouseButtonEventHandler(MouseRightUp);
+            //myWin.KeyUp += new KeyEventHandler(MyWin_KeyUp);
+            //myWin.MouseWheel += new MouseWheelEventHandler(MouseScroll);
+
+
+            //myWin.ShowDialog();
+            myWin.TakeScreenShot2();
         }
         
         // SCROLL
