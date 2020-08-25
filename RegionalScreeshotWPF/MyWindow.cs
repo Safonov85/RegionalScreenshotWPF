@@ -80,5 +80,15 @@ namespace RegionalScreeshotWPF
 
             Console.WriteLine("testing screen shot");
         }
+
+        public void TakeScreenShot3()
+        {
+
+            int width = Screen.PrimaryScreen.Bounds.Size.Width;
+            int height = Screen.PrimaryScreen.Bounds.Size.Height;
+            DrawingVisual drawvis = new DrawingVisual();
+            System.Windows.Point point1 = new System.Windows.Point(0, 0);
+            System.Windows.Point point2 = new System.Windows.Point(width, height);
+        }
     }
 }

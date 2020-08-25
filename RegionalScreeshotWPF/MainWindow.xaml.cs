@@ -45,7 +45,8 @@ namespace RegionalScreeshotWPF
 
 
             //myWin.ShowDialog();
-            myWin.TakeScreenShot2();
+            myWin.TakeScreenShot3();
+            myWin.ShowDialog();
         }
         
         // SCROLL

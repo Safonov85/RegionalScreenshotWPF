@@ -12,3 +12,4 @@ C:\Users\Mycomp\source\repos\RegionalScreeshotWPF\RegionalScreeshotWPF\obj\Debug
 C:\Users\Mycomp\source\repos\RegionalScreeshotWPF\RegionalScreeshotWPF\obj\Debug\RegionalScreeshotWPF.csproj.GenerateResource.cache
 C:\Users\Mycomp\source\repos\RegionalScreeshotWPF\RegionalScreeshotWPF\obj\Debug\RegionalScreeshotWPF.exe
 C:\Users\Mycomp\source\repos\RegionalScreeshotWPF\RegionalScreeshotWPF\obj\Debug\RegionalScreeshotWPF.pdb
+C:\Users\Mycomp\source\repos\RegionalScreeshotWPF\RegionalScreeshotWPF\obj\Debug\RegionalScreeshotWPF.csproj.CoreCompileInputs.cache
